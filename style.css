@@ -1,14 +1,64 @@
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin: 50px;
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background.jpeg") center center no-repeat;
+    background-size: cover;
   }
-  .cell {
-    background-color: #ddd;
-    font-size: 72px;
-    text-align: center;
-    vertical-align: middle;
+*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
   }
   
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 10px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #eee;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #reset {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+  
+.scoreboard {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+  }

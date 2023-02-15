@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="scoreboard" id="scoreboard"></div>
+        <p>Player X: 0 | Player O: 0 </p>
+        </div>
     <div class="board">
       <div class="cell" id="cell-0"></div>
       <div class="cell" id="cell-1"></div>
@@ -15,6 +20,10 @@
       <div class="cell" id="cell-7"></div>
       <div class="cell" id="cell-8"></div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="controls">
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
