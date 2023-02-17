@@ -1,7 +1,8 @@
 const cells = document.querySelectorAll('.cell');
 const resetBtn = document.getElementById('reset');
 const scoreboard = document.getElementById('scoreboard');
-let currentPlayer = 'X';
+const choosePlayerBtn = document.getElementById('choose-player');
+let currentPlayer = '';
 let xScore = 0;
 let oScore = 0;
 let gameFinished = false;
@@ -9,6 +10,12 @@ let gameFinished = false;
 // Add event listeners to all cells
 cells.forEach(cell => {
   cell.addEventListener('click', handleCellClick);
+});
+
+// Add event listener to the choose player button
+choosePlayerBtn.addEventListener('click', () => {
+  currentPlayer = prompt("Choose your player ('X' or 'O'):");
+  resetGame();
 });
 
 // Handle cell click event
@@ -90,10 +97,12 @@ function updateScoreboard() {
 // Reset the game
 function resetGame() {
   gameFinished = false;
-  currentPlayer = 'X';
+  currentPlayer = currentPlayer || 'X'; // default to X if currentPlayer is empty
   cells.forEach(cell => {
     cell.textContent = '';
   });
+  updateScoreboard();
+  console.log('Game has been reset.');
 }
 
 // Add event listener to the reset button

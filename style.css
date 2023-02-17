@@ -7,7 +7,7 @@
     background-size: cover;
   }
 */
-  .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,7 @@
   border: 2px solid #000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
+  font-family:'Courier New', Courier, monospace;
   
 }
 
@@ -36,7 +37,7 @@
   border: 10px solid #bfbfbf;
   }
   
-  .cell {
+.cell {
     width: 100px;
     height: 100px;
     background-color: #f7f7f7;
@@ -48,23 +49,23 @@
     cursor: pointer;
   }
   
-  .cell:hover {
+.cell:hover {
     background-color: #eee;
   }
   
-  .controls {
+.controls {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
   
-  #reset {
+#reset {
     font-size: 16px;
     padding: 8px 16px;
     margin-right: 10px;
   }
   
-  .scoreboard {
+.scoreboard {
     background-color: white;
     border: 2px solid black;
     padding: 10px;
