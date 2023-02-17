@@ -18,14 +18,22 @@
     background-position: center;
   }
   
-  .board {
-    display: flex;
-    flex-wrap: wrap;
-    width: 306px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 10px solid #bfbfbf;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 306px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 10px solid #bfbfbf;
   }
   
   .cell {
